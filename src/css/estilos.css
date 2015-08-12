@@ -1,0 +1,8 @@
+.fondo{
+	background: url(../img/black.jpg) no-repeat center center fixed; 
+	background-size: cover;
+	height: 100%;
+}
+.separador{
+	height: 50px;
+}
