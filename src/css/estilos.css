@@ -6,3 +6,63 @@
 .separador{
 	height: 50px;
 }
+.bloque{
+	padding:30px;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.seccion{
+	margin: 30px;
+}
+.bloque:hover,
+.bloque:focus{
+	border: 3px solid white;
+}
+h1,h4{
+	color: white;
+}
+p{
+	color: white;
+	font-family: Helvetica,sans-serif;
+}
+#about {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 3;
+}	
+/*Codigo css Calachua*/
+.cuadro{
+	text-align: left;
+	cursor: pointer;
+	padding: 10px;
+}
+.contenedor{
+	padding-right: 100px;
+
+}
+
+img.imagen{
+	border:2px solid grey;
+	margin: 20px;
+	padding: 0;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+p:active{
+	position: relative;
+	top: 1px;
+}
+p{
+    -webkit-transition: opacity 0.4s linear;
+    margin: 7px;
+}
+p:hover{
+	opacity: 0.7;
+}
+strong{
+	margin: 7px;
+}
