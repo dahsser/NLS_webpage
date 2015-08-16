@@ -42,15 +42,66 @@
        		  		<li><a href="#servicios">Servicios</a></li>
      				<li><a href="#procesos">Procesos</a></li>
        	 		<li><a href="#proyectos">Nuestros Proyectos</a></li>
-       	 		<li><a href="#contactenos">Contáctenos</a></li>
+       	 		<li><a href="#contactenos" href="javascript:void(0);" onclick="mostrar('contactanos');">Contáctenos</a></li>
            </ul>
     		</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
-	<div id="aboutus" class="container">
-		<div class="separador">
-	
+
+	<div class="row contact" id="contactanos" style="display:none;">
+			<div class="col-xs-offset-1 col-xs-10 col-sm-offset-7 col-sm-5" style="margin-top:-13px">
+				<div class="panel panel-success">					
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-offset-1 col-xs-10">
+								<form action="">
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-user"></i>
+											</span>
+											<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese Nombre">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-envelope"></i>
+											</span>
+											<input type="email" class="form-control" name="email" id="email" placeholder="Ingrese E-mail">
+										</div>									
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-phone"></i>
+											</span>
+											<input type="tel" class="form-control" name="tel" id="tel" placeholder="Ingrese Teléfono">
+										</div>									
+									</div>
+									<div class="form-group">
+										<label for="textarea">Mensaje :</label>
+										<div class="row">
+											<textarea name="textarea" id="textarea" cols="30" rows="3" style="width: 95%; height: 75px; margin-left: 15px;"></textarea>											
+										</div>
+									</div>
+										
+								</form>
+							</div>							
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="form-group text-center">
+								<button type="button" class="btn btn-success" onclick="loginjs()">Enviar</button>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
 		</div>
+
+	<div id="aboutus" class="container">
 		<div class="seccion">
     	  <div class="col-lg-8 col-xs-12">
      		 <div class="bloque">
@@ -64,10 +115,9 @@
     </div>
   </div> 
 	</div><!--end container-->
-	<div class="separador" id="servicios">
-	</div>
+	
   <div class="container">
-    <h1 style="text-align:center;">Nuestros Servicios</h1>
+    <h1 id="servicios"style="text-align:center;">Nuestros Servicios</h1>
   </div>
   <div class="container">
   	<div class="seccion">
@@ -91,13 +141,9 @@
     			</div>
   			</div> <!--end seccion-->
   </div>
-		
-
-  	<div class="separador">
-
-	</div>
-  <div class="container" id="procesos">
-		<h1 style="text-align:center;">Procesos</h1>
+  
+  <div class="container-fluid contenedor">
+		<h1 id="procesos"style="text-align:center;">Procesos</h1>
 		<div class="row contenido">
 			<div class="col-xs-12 col-sm-6 col-md-4 cuadro" id="animate">
 				<table>
@@ -190,10 +236,46 @@
 						</td>
 					</tr>
 				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h1 id="proyectos"style="text-align:center;">Nuestros Proyectos</h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center; margin-top: 5%;">
+				<img class="img-responsive img-thumbnail" src="./src/img/kira.jpg" alt="">
 			</div>
 		</div>
 	</div>
 </div> <!-- end fondo -->
+<script>
+		function mostrar(bloque) {
+   			var estado=document.getElementById(bloque);
+			if(estado.style.display == 'block') {
+				estado.style.display = 'none';
+			}
+			else {
+				estado.style.display = 'block';
+			}
+		}		
+	</script>
 <script type="text/javascript">
 
 $(document).ready(function(){

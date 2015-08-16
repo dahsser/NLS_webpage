@@ -62,3 +62,27 @@ p:hover{
 strong{
 	margin: 7px;
 }
+.contact{
+	margin-top: -15px;
+}
+
+@media (min-width: 768px) {
+	.contact{
+		margin-right: 3px;
+		margin-top: -9px;
+	}
+}
+
+@media (min-width: 992px) {
+	.contact{
+		margin-top: -20px;
+	}
+}
+
+.img-thumbnail:hover{
+	-webkit-transform:scale(1.2);
+	   -moz-transform:scale(1.2);
+	    -ms-transform:scale(1.2);
+	     -o-transform:scale(1.2);
+	        transform:scale(1.2);
+}
