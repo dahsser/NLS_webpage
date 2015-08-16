@@ -20,7 +20,7 @@
 	border: 3px solid white;
 }
 h1,h4{
-	color: white;
+	color: lime;
 }
 p{
 	color: white;
@@ -36,10 +36,6 @@ p{
 	text-align: left;
 	cursor: pointer;
 	padding: 10px;
-}
-.contenedor{
-	padding-right: 100px;
-
 }
 
 img.imagen{
